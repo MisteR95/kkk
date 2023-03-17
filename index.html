@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="styl.css"></a>
+</head>
+<body>
+    <label>Podaj rozmiar tekstu w procentach
+    <input id="rozmiarTekstu" type="number">%<br>
+</label>
+<select onchange = "typCzcionki(this.value)">
+    <option value="normal">Prosty</option>
+    <option value="italic">Krzywy</option>
+</select>
+<label>numer kawy: <br>
+    <input type="number" id="numerKawy" /><br />
+</label>
+<label>Podaj wagę w dekagramach
+    <input type="number" id="wagaKawy" /><br />
+</label>
+<button type="button" onclick="obliczKawa();">Zamów</button>
+<p id="wynik_4"></p>
+<script src="main.js"></script>
+<div id="prawy">
+    <h1>Wybierz zdjęcie</h1>
+    <img src="img/pies1.jpg" alt="pies1" id="pies1" onmouseover="over('pies1', 'img/pies1-szary.jpg')" onmouseout="out('pies1', 'img/pies1.jpg')" onclick="clicked('pies1', 'img/pies1.jpg')" />
+    <img src="img/pies2.jpg" alt="pies2" id="pies2" onmouseover="over('pies2', 'img/pies2-szary.jpg')" onmouseout="out('pies2', 'img/pies2.jpg')" onclick="clicked('pies2', 'img/pies2.jpg')" />
+    <img src="img/pies3.jpg" alt="pies3" id="pies3" onmouseover="over('pies3', 'img/pies3-szary.jpg')" onmouseout="out('pies3', 'img/pies3.jpg')" onclick="clicked('pies3', 'img/pies3.jpg')" />
+</div>
+<div id="prawy2">
+    <p><img id="prawyPies" src="img/pies1.jpg" alt="pies-duży"></p>
+</div>
+</body>
+</html>
